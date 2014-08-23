@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:10.001
+http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/video/output.jpg#xywh=0,0,160,90
+
+00:10.001 --> 00:20.001
+http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/video/output.jpg#xywh=0,360,160,90
+
+00:20.001 --> 00:30.001
+http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/video/output.jpg#xywh=0,640,160,90
+
+00:30.001 --> 00:40.001
+http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/video/output.jpg#xywh=0,1000,160,90
+
+00:40.001 --> 00:50.001
+http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/video/output.jpg#xywh=0,1360,160,90
+
+00:50.001 --> 01:00.001
+http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/video/output.jpg#xywh=0,1640,160,90
+
+
+

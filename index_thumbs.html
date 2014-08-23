@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TestNewVideo</title>
+        <meta name="description" content="TestNewVideo">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      	<style type="text/css">
+		  html,body { 
+		    height:100%; 
+		    width:100%; 
+		    padding:0; 
+		    margin:0; 
+		 }
+          
+          #myVideo { 
+	        display: block; 
+	        margin: 0 auto; 
+	        width:100%; 
+	     }
+		
+		 @media all and (max-device-width: 767px) { 
+		
+		   #myVideo { 
+			 max-width: 100%;
+			 width: 100%;
+			 height: auto;
+			 padding:0;
+			} 
+		}
+		
+		 @media all and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) { 
+		  
+			#myVideo { 
+			  max-width: 100%;
+		      width: 100%;
+		      height: auto;
+		      padding:0;
+		    }
+		} 
+	  </style>
+		<!-- jQuery is not being used for this Test Page and can be removed -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	        <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	    <!-- JW Player Scripts -->
+        <script type="text/javascript" src="http://jwplayer-thumbnail.s3-website-us-east-1.amazonaws.com/jwplayer.js" ></script>
+		<script type="text/javascript">jwplayer.key="T2p14h6hVX1KOirpFnYIzSN6tn+Cfav0wHVRMA==";</script>
+		
+		
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+       <!-- JW Player Single Stream-->
+         <div id="myVideo"></div>
+        <script>
+		jwplayer("myVideo").setup({
+		  playlist: [{
+		    image: "http://d1wxkkk9zjct37.cloudfront.net/images/big_buck_bunny.jpg",
+		    sources: [{
+		      file: "rtmp://s29487yy4d45j2.cloudfront.net/cfx/st/mp4:video/big_buck_bunny.mp4"
+		    },{
+		      file: "http://d1wxkkk9zjct37.cloudfront.net/video/big_buck_bunny.mp4"
+			},{
+		      file: "http://d1wxkkk9zjct37.cloudfront.net/video/big_buck_bunny.ogg"
+		   }],
+			tracks: [{ 
+			            file: "video/bbbunny.vtt", 
+			            kind: "thumbnails"
+			}]
+		 }],
+		  primary: "flash",
+		  width: '640',
+		  height: '320'
+		});
+		</script>
+    </body>
+</html>
